@@ -1,5 +1,8 @@
-LAWYER_STATUS= [
-    ('private', 'Private'),
-    ('18B', '18 B'),
-    ('legal aid', 'Legal Aid'),
-    ]
+from django import forms
+from django.forms import ModelForm
+from .models import Counsel 
+
+class AddCounsel(ModelForm):
+    class Meta:
+        model = Counsel
+        
