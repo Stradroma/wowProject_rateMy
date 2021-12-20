@@ -12,6 +12,12 @@ class Counsel(models.Model):
     firmN = models.CharField(max_length= 100)
     status = models.ForeignKey
     phoneN = models.IntegerField()
+    Address = models.CharField(max_length= 15)
+    Address2 = models.CharField(max_length= 15)
+    zip_code = models.IntegerField()
+    borough = models.ForeignKey
+    city = models.CharField(max_length= 15)
+    state = models.CharField(max_length= 15) 
 
 class Comment(models.Model):
     fName = models.CharField(max_length= 15)
@@ -19,8 +25,6 @@ class Comment(models.Model):
     date = DateField
     comments = forms.CharField(max_length=500)
 
-class Rating(models.Model):
-    pass
 
 class ViewCounsel(models.Model):
     pass
