@@ -23,13 +23,11 @@
               Borough
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Bronx</a></li>
-              <li><a class="dropdown-item" href="#">Brooklyn</a></li>
-              <li><a class="dropdown-item" href="#">Manhattan</a></li>
-              <li><a class="dropdown-item" href="#">Queens</a></li>
-              <li><a class="dropdown-item" href="#">Staten Island</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="{% url 'bronx' %}">Bronx</a></li>
+              <li><a class="dropdown-item" href="{% url 'brooklyn' %}">Brooklyn</a></li>
+              <li><a class="dropdown-item" href="{% url 'manhattan' %}">Manhattan</a></li>
+              <li><a class="dropdown-item" href="{% url 'queens' %}">Queens</a></li>
+              <li><a class="dropdown-item" href="{% url 'staten_island' %}">Staten Island</a></li>
             </ul>
           </li>
         </ul>
