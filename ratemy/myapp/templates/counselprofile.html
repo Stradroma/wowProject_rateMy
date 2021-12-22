@@ -1,5 +1,28 @@
 {% extends 'ratemyview/base.html' %}
 
 {% block content %}
-    <h1>counselProfile</h1>
+    <h1>Counsel Profile</h1>
+    {% load static %}
+<div class="container">
+    <div class="row counselDetailRow">
+      <div class="col counselDetailColumn">
+          <p class='counselDetail'>Name</p>
+          <br/>
+          <br/>
+          <p class='counselDetail'>Counsel Type</p>
+          <br/>
+          <br/>
+          <p class='counselDetail'>Borough</p>
+          <br/>
+          <br/>
+          <p class='counselDetail'>Star Rating</p>
+          <br/>
+          <br/>
+      </div>
+      <div class="col-10">
+        <img src='{% static "Lawyer.jpg" %}' alt='Lawyer' class='counselProfile'/>
+        <br/>
+        <br/>
+      </div>
+    </div>
 {% endblock %}

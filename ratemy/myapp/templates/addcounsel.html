@@ -10,7 +10,7 @@
     
     
   {% else %}
-        <form action="" method=POST>
+        <form action="" method=POST class="addCounselForm">
             {% csrf_token %}
 
             {{  form.as_p  }}

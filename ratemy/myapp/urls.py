@@ -1,3 +1,4 @@
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
 from . import views
 
@@ -14,3 +15,4 @@ urlpatterns = [
     path('brooklyn', views.brooklyn, name='brooklyn'),
     path('staten_island', views.staten_island, name='staten_island'),
 ]
+urlpatterns += staticfiles_urlpatterns()

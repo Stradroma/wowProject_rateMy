@@ -1,9 +1,11 @@
-<img src='https://commbasedservices.org/wp-content/uploads/2018/10/NYS.jpg' style='width: 250px; margin-bottom: -150px;' />
+{% extends 'ratemyview/base.html' %}
 
-<h1 style='text-align: center; margin-top: 50px;'>Bronx</h1>
+{% block content %}
+<img src='https://commbasedservices.org/wp-content/uploads/2018/10/NYS.jpg' class="nysLogo"/>
 
-<select class="form-select" aria-label="Default select example" style='width: 225px;display: block;
-margin-left: auto; margin-right: auto'>
+<h1>Bronx</h1>
+
+<select class="form-select" aria-label="Default select example" id="selectDropDown">
     <option selected>select</option>
     <option value="1">Option One</option>
     <option value="2">Option Two</option>
@@ -12,24 +14,37 @@ margin-left: auto; margin-right: auto'>
   <br/>
   <br/>
 
-  <img src='http://www.ll-mm.com/images/placeholders/image-placeholder.jpg' style='display: block; margin-left: auto; margin-right: auto'/>
-  <br/>
-  <br/>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <ul class="counselTypeLinks">
+        <li><a href="{% url 'home' %}">home</a></li>
+        <br/>
+        <br/>
+        <li><a href="#">18B</a></li>
+        <br/>
+        <br/>
+        <li><a href="#">Public Defender</a></li>
+        <br/>
+        <br/>
+        <li><a href="#">Private</a></li>
+        <br/>
+        <br/>
+        <li><a href="#">Resources</a></li>
+        <br/>
+        <br/>
+        <li><a href="#">Add Counsel</a></li>
+        </ul>
+    </div>
+    <div class="col-8">
+      <img src='http://www.ll-mm.com/images/placeholders/image-placeholder.jpg' class="counselImgPlaceholder"/>
+      <br/>
+      <br/>
+    </div>
+  </div>
+</div>
+{% endblock %}  
 
-  <a href="{% url 'home' %}" style='margin-left: 25px;'>home</a>
-<br/>
-<br/>
 
-<a href="#" style='margin-left: 25px;'>18B</a>
-<br/>
-<br/>
-<a href="#" style='margin-left: 25px;'>Public Defender</a>
-<br/>
-<br/>
-<a href="#" style='margin-left: 25px;'>Private</a>
-<br/>
-<br/>
-<a href="#" style='margin-left: 25px;'>Resources</a>
-<br/>
-<br/>
-<a href="#" style='margin-left: 25px;'>Add Counsel</a>
+
+
