@@ -40,3 +40,24 @@ def addcounsel(request):
 def about(request):
     if request.method == 'GET':
         return render(request=request, template_name='about.html')
+
+def bronx(request):
+    if request.method == 'GET':
+        return render(request=request, template_name='bronx.html') 
+
+def manhattan(request):
+    if request.method == 'GET':
+        return render(request=request, template_name='manhattan.html') 
+
+def queens(request):
+    if request.method == 'GET':
+        return render(request=request, template_name='queens.html')  
+
+def brooklyn(request):
+    if request.method == 'GET':
+        return render(request=request, template_name='brooklyn.html') 
+
+def staten_island(request):
+    if request.method == 'GET':
+        return render(request=request, template_name='staten_island.html') 
+                                             

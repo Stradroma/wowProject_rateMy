@@ -1,0 +1,65 @@
+.nysLogo {
+    width: 25%;
+    margin-bottom: -125px;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+ul {
+    list-style-type: none;
+}
+.counselTypeLinks > li {
+    margin-left: 25px;
+    padding: 0;
+    margin-right: -150px;
+    margin-left: 50px;
+    margin-bottom: -30px;
+}
+a {
+    text-decoration: none;
+}
+#selectDropDown {
+     width: 350px;
+     margin: auto;
+     padding: 10px;
+}    
+.addCounselForm {
+    width: 50%;
+}
+.counselImgPlaceholder {
+   margin-right: 200px;
+}
+#loremText {
+    margin-left: 125px; 
+    margin-right: 125px;
+}
+.horLine {
+    width: 40%;
+    margin: auto;
+}
+.homeBoroughLinks {
+    background-color: black;
+    color: green;
+    border-radius: 17px;
+    font-weight: bold;
+    width: 207px;
+    padding: 11px;
+    margin-bottom: 13px;
+}
+.center {
+    text-align: center;
+}
+.counselProfile {
+    width: 50%;
+    margin-top: 50px;
+}
+.counselDetailColumn {
+    margin-top: 120px;
+}
+.counselDetail {
+    margin-bottom: -15px;
+}
+.counselDetailRow {
+    margin-left: 200px;
+}
