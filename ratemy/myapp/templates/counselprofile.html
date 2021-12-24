@@ -1,28 +1,149 @@
 {% extends 'ratemyview/base.html' %}
 
 {% block content %}
-    <h1>Counsel Profile</h1>
-    {% load static %}
 <div class="container">
-    <div class="row counselDetailRow">
-      <div class="col counselDetailColumn">
-          <p class='counselDetail'>Name</p>
-          <br/>
-          <br/>
-          <p class='counselDetail'>Counsel Type</p>
-          <br/>
-          <br/>
-          <p class='counselDetail'>Borough</p>
-          <br/>
-          <br/>
-          <p class='counselDetail'>Star Rating</p>
-          <br/>
-          <br/>
+  <div class="row">
+    <h1 style="background-color:powderblue;">Counsel Profile</h1>
+    {% load static %}
+    <div class="row">
+      <div class="col">
+      <br/>
+      <img src='{% static "Lawyer.jpg" %}' alt="John" style="width:150px;height:200px;">
+      <!-- <div class="row counselDetailRow">
+        <div class="col counselDetailColumn"> -->
+            <p class='counselDetail'>Counsel Name : <strong>Jane Doe</strong></p>
+            <br/>
+            <p class='counselDetail'>Status : <strong>Legal Aid</strong></p>
+            <br/>
+            <p class='counselDetail'>Borough : <strong>Brooklyn</strong></p>
+            <br/>
+            <p class='counselDetail'>Star Rating</p>
+            <br/>
+              <div class"Rating">
+                  <input type="radio" id="star1"><label for="star1"></label>
+                  <input type="radio" id="star2"><label for="star2"></label>
+                  <input type="radio" id="star3"><label for="star3"></label>
+                  <input type="radio" id="star4"><label for="star4"></label>
+                  <input type="radio" id="star5"><label for="star5"></label>
+               </div>
+
       </div>
-      <div class="col-10">
-        <img src='{% static "Lawyer.jpg" %}' alt='Lawyer' class='counselProfile'/>
+      <div class="col">
+        <div>
+          <textarea name="Comment" id="comments"  style="width:600px; height:300px;">
+              Leave Counsel Review Here.
+          </textarea>
+        </div>
+      </div>
+      <div class="col">
+       
+      </div>
+      <input type="submit" value="Submit">
+      </form>
+      <form action="/html/tags/html_form_tag_action.cfm" method="POST">
+        <br/>
+        
+        <h1><strong>Counsel Review</strong></h1>
         <br/>
         <br/>
-      </div>
+        <div class="row">
+          <div class="col">
+            
+
+          </div>
+          <div class="col">
+            <div>
+              <textarea name="Comment" id="comments"  style="width:600px; height:300px;">
+                TELLS IT LIKE IT IS
+
+                Perhaps the thing that impressed me most about Joshua Goldberg was nothing was "sugar coated". He was very straight forward and told me what to expect each step of the way. Going thru the separation and divorce from start to finish, Joshua kept me informed of each step and what the options were and what the risks were. There were no empty promises made just to keep the client happy which I know sometimes occurs when seeking counsel. Since this was the first time going through a divorce I had many questions. When calling the office, Joshua Goldberg took the
+                
+                - Paul, a Divorce Client
+              </textarea>
+            </div>
+          </div>
+          <div class="col">
+          
+          </div>
+        </div>
+<br/>
+<br/>
+<div class="row">
+  <div class="col">
+
+  </div>
+  <div class="col">
+    <div>
+      <textarea name="Comment" id="comments"  style="width:600px; height:300px;">
+
+
+        Nick has handled many legal matters for me over the years and has always achieved the outcome I was looking for. He handled my divorce, custody (as a Dad I was able to get full custody), and various other legal matters. I highly recommend him to anyone who needs sound legal advice.
+
+        - Kerry, a Custody Client        
+       
+      </textarea>
     </div>
+  </div>
+  <div class="col">
+  
+  </div>
+</div>
+<br/><br/>
+<div class="row">
+  <div class="col">
+
+  </div>
+  <div class="col">
+    <div>
+      <textarea name="Comment" id="comments"  style="width:600px; height:300px;">
+        I received a reference for Attorney Brett Riegel after I was criminally charged in Bucks County, Pennsylvania. The charges were an attempt to take heat off an extremely exclusive gun club whose rich, politically connected members shoot live pigeons for entertainment. My organization's attempts to expose illegal behavior by gun club members put us at odds with the corrupt district attorney and local police. The case against me was made up of outrageous lies, but they nonetheless comprised a very potent legal threat. Very few lawyers were willing to go against the local "county good old boys." Fortunately, Brett Riegel
+
+        - Steve, a Criminal Defense client
+      </textarea>
+    </div>
+  </div>
+  <div class="col">
+  
+  </div>
+</div>
+<br/>
+<br/>
+<div class="row">
+  <div class="col">
+
+  </div>
+  <div class="col">
+    <div>
+      <textarea name="Comment" id="comments"  style="width:600px; height:300px;">
+        "My experience with Boyd Law was excellent. My attorney, Matt Cadwell, gave my case all the time and attention that was needed to be successful in court. He was a calming and confident presence during very difficult court proceedings. Although I acquired his services through the Modest Means Program, I never once was treated as anything other than a valuable client by Mr. Cadwell. I very much appreciate the knowledge and support I received through Boyd Law."
+
+        TORI
+      </textarea>
+    </div>
+  </div>
+  <div class="col">
+  
+  </div>
+</div>
+<br/><br/>
+<div class="row">
+  <div class="col">
+
+  </div>
+  <div class="col">
+    <div>
+      <textarea name="Comment" id="comments"  style="width:600px; height:300px;">
+        TELLS IT LIKE IT IS
+
+        Perhaps the thing that impressed me most about Joshua Goldberg was nothing was "sugar coated". He was very straight forward and told me what to expect each step of the way. Going thru the separation and divorce from start to finish, Joshua kept me informed of each step and what the options were and what the risks were. There were no empty promises made just to keep the client happy which I know sometimes occurs when seeking counsel. Since this was the first time going through a divorce I had many questions. When calling the office, Joshua Goldberg took the
+        
+        - Paul, a Divorce Client
+      </textarea>
+    </div>
+  </div>
+  <div class="col">
+  
+  </div>
+</div>
 {% endblock %}
+              

@@ -1,25 +1,32 @@
+<!-- Navigation Bar For Page -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid" id='navbarLinks'>
+   
+  <div class="container-fluid" id='navbarLinks'>
+       <!-- URL Link for Home Page as Page Logo -->
       <a class="navbar-brand" href="{% url 'home' %}">Rate My Counsel</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+      <!-- URL Link for Counsel Profile -->
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'counselprofile' %}">Counsel Profile</a>
+        </li>
+      <!-- URL Link for Add Counsel --> 
+         <li class="nav-item">
           <li class="nav-item">
             <a class="nav-link" href="{% url 'addcounsel' %}">Add Counsel</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'counselprofile' %}">Counsel Profile</a>
-          </li>
-          <li class="nav-item">
+      <!-- URL Link for About -->
+            <li class="nav-item">
             <a class="nav-link" href="{% url 'about' %}">About</a>
           </li>
+      <!-- URL Link for Borough, Lawyer DataBases Dict By Borough  -->    
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="{% url 'borough' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Borough
             </a>
+      <!-- URL Link for Lawyer DataBases Dict By Borough  -->      
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="{% url 'bronx' %}">Bronx</a></li>
               <li><a class="dropdown-item" href="{% url 'brooklyn' %}">Brooklyn</a></li>
@@ -29,6 +36,7 @@
             </ul>
           </li>
         </ul>
+      <!-- Search Bar To Look Up Counsel In Database  -->  
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search Counsel" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>

@@ -1,7 +1,7 @@
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
 from . import views
-
+# URL patterns for app
 urlpatterns = [
     path('', views.home, name='home'),
     path('borough', views.borough, name='borough'),
@@ -14,5 +14,7 @@ urlpatterns = [
     path('queens', views.queens, name='queens'),
     path('brooklyn', views.brooklyn, name='brooklyn'),
     path('staten_island', views.staten_island, name='staten_island'),
+    path('delete_review', views.delete_review, name='delete-review'),
+
 ]
 urlpatterns += staticfiles_urlpatterns()
