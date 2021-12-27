@@ -1,23 +1,85 @@
 {% extends 'ratemyview/base.html' %}
 
-
 {% block content %}
-  <center>
-  <h1>Add Counsel</h1>
-  <br/><br/>
-  {% if submitted %}
-        Thank You !!!!
+    <h1>Add Counsel To Database</h1>
+    <br/><br/>
     
+    {% if sumbitted %}
+        You Have Succesfully 
+        Added A New Counsel!
+
+    {% else %}
+
+    <form action="" method=POST>
+        {% csrf_token %}
     
-  {% else %}
-        <form action="" method=POST class="addCounselForm">
-            {% csrf_token %}
-
-            {{  form.as_p  }}
-            <input type="submit" value= "Counsel Submit" 
-            class="btn btn-secondary">
-
-        </form>
-  {% endif %}  
-  </center>
+        <form class="row g-3">
+        <div class="col-md-6">
+          <label for="fName" class="form-label">First Name</label>
+          <input type="fName" class="form-control" id="fName">
+        </div>
+        <div class="col-md-6">
+          <label for="lName" class="form-label">Last Name</label>
+          <input type="lName" class="form-control" id="lName">
+        </div>
+        <div class="col-md-6">
+            <label for="firmN" class="form-label">Firm / Practice Name</label>
+            <input type="firmN" class="form-control" id="firmN">
+        </div>
+        <div class="col-md-4">
+            <label for="phoneN" class="form-label">Phone Number</label>
+            <input type="phoneN" class="form-control" id="phoneN" placeholder="">
+        </div>
+        <div class="col-md-6">
+            <label for="status" class="form-label">Status</label>
+            <label for="inputStatus" class="form-label">Status</label>
+            <select type="text" class="form-select" id="statusselect">
+                <option selected>Select Status</option>
+                  <option>Legal Aid / Public Defender</option>
+                  <option>Private Attorney</option>
+                </select>            
+        </div> 
+        
+        <div class="col-md-6">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-md-6">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Floor / Suite">
+        </div>
+        <div class="col-md-4">
+            <label for="inputBorough" class="form-label">Borough</label>
+            <select type="text" class="form-select" id="boroughselect">
+                <option selected>Select Borough</option>
+                  <option>Bronx</option>
+                  <option>Brooklyn</option>
+                  <option>Manhattan</option>
+                  <option>Queens</option>
+                  <option>Staten</option>
+                </select>  
+        </div>
+          </li>
+        <div class="col-md-4">
+          <label for="State" class="form-label">State</label>
+          <input type="text" class="form-control" id="New York" placeholder="New York">
+        </div>
+        <div class="col-md-4">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip"placeholder="10001">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Information Submitted Is Current & Accurate To My Knowledge
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <input type="submit" valuse= "Submit" class="btn btn-scondary">Add Counsel</button>
+        </div>
+      </form>
+    </form>
+    {% endif %}
 {% endblock %}
